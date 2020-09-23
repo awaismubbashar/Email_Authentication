@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#566EF1"
+    tools:context=".SignupActivity">
+
+    <EditText
+        android:id="@+id/signupName"
+        android:layout_width="341dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+
+    <EditText
+        android:id="@+id/signupEmailID"
+        android:layout_width="341dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="email@gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupName"
+        app:layout_constraintVertical_bias="0.089" />
+
+
+    <EditText
+        android:id="@+id/signupPasswordID"
+        android:layout_width="341dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupEmailID"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="340dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#E1E6E6"
+        android:text="signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupPasswordID"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <ProgressBar
+        android:id="@+id/signupProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="81dp"
+        android:layout_height="63dp"
+        android:progressBackgroundTint="#B8B8B8"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupButton"
+        app:layout_constraintVertical_bias="0.41" />
+</androidx.constraintlayout.widget.ConstraintLayout>
